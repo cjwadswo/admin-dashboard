@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+li, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    padding-left: 20px;
+    display:grid;
+    grid-row: 1;
+    background-color: #1992d4;
+    grid-template-rows: min-content min-content min-content;
+    gap: 50px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    display: grid;
+    gap: 25px;
+}
