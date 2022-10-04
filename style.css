@@ -108,36 +108,43 @@ li, ul {
 .projects {
     grid-area: projects;
     display: grid;
-    grid-template-rows: min-content;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 30px;
+    ;
+    
 }
 
-.projects p {
-    font-size: 18px;
-    font-family: sans-serif;
-    color: white;
-    text-align: left;
-  }
-  
-  .projects .card {
-    background-color: #FFFFFF;
-    color: black;
-    text-align: center;
+.card {
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
     height: 200px;
-  }
-  
-  .card p {
-    color: black;
-    font-weight: normal;
-    font-size: 14px;
-  }
-  
-  .card .title {
-    font-size: 18px;
-    text-align: center;
-  }
+    width: 375px;
+    text-align: left;
+    background-color: white;
+    border-left: solid 8px #f0b936;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-top: 2rem;
 
+}
+
+.card .title {
+    font-weight: bolder;
+    padding-bottom: .5rem;
+}
+
+.card .icon {
+    justify-self: end;
+    align-self: end;
+    padding-bottom: 1rem;
+    font-size: 24px;
+}
+
+
+iconify-icon {
+    padding-right: 1rem;
+}
   /*trending*/
   .sidebar-header{
     display: grid;
