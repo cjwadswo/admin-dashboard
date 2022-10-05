@@ -3,7 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .container {
     display:grid;
     grid-template-areas:
@@ -32,10 +36,12 @@ li {
 
 .sidebar-title iconify-icon {
     font-size: 3rem;
+    margin-left: -.4rem;
 }
 
 .sidebar-title {
     align-items: center;
+    font-size: 2rem;
 }
 
 .sidebar {
@@ -50,6 +56,8 @@ li {
     font-size: 1.5rem;
 }
 
+
+
 .sidebar ul {
     display: grid;
     gap: 25px;
@@ -59,6 +67,9 @@ li {
     display:flex;
 }
 
+.sidebar iconify-icon {
+    padding-right: 1rem;
+}
 
 /* header */
 .header{
@@ -74,25 +85,52 @@ li {
     align-items: center;
 
 } 
+
+.search-icon {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
 .navbar input {
     display: flex;
-    height: 1.5rem;
+    height: 1.75rem;
     width: 35rem;
     border-radius: 10px;
+    /* padding-left: 1rem; */
     background-color: #e2e8f0;
+    border: none;
+}
+
+.notification-bell {
+    font-size: 2rem;
 }
 
 .brand-bar{
    display: flex;
+   align-items: center;
+   width: 25%;
+   justify-content: space-evenly;
+   padding-right: 3rem;
+}
+.brand-bar .brand-name {
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
+.brand-bar img {
+    align-self: center;
+    border-radius: 50%;
+    width: 45px;
+  }
 /* subheader */
 .subheader{
     display: flex;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
     justify-content: space-between;
     align-items: center;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
 }
 .subheader .control-buttons{
     display: flex;
@@ -104,9 +142,28 @@ li {
     border: none;
     background-color: #1992d4;
     color: white;
-    width: 5rem;
-    padding: 10px 0 10px 0;
+    width: 7rem;
+    padding: 15px 0 15px 0;
+    
 }
+.subheader img {
+    align-self: center;
+    border-radius: 50%;
+    width: 45px;
+  }
+
+  .brand-name-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-text {
+    padding-left: 1rem;
+    font-weight: bolder;
+  }
+  .logo-text .brand-name {
+    font-size: 2rem;
+  }
 
 /*Main content*/
 
@@ -125,14 +182,17 @@ li {
 /*projects*/
 .project-header{
     grid-area: project-header;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 .projects {
     grid-area: projects;
     display: grid;
     grid-template-rows: min-content min-content;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     row-gap: 30px;
-    ;
+    
     
 }
 
@@ -163,17 +223,21 @@ li {
 }
 
 
-iconify-icon {
+.card iconify-icon {
     padding-right: 1rem;
 }
-  /*trending*/
-  .sidebar-header{
+/*trending*/
+.sidebar-header{
     display: grid;
     grid-area: sidebar-header;
-  }
+    font-weight: bold;
+    font-size: 1.5rem;
+        
+}
 
   .content-sidebar {
     grid-area: sidebar;
+    align-self: center;
   }
   
 .dealwrapper {
